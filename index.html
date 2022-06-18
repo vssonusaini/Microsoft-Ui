@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft Ui</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body>
+    <!-- container -->
+    <div class="container">
+      <!-- top navbar -->
+      <nav>
+        <!-- nav menu list -->
+        <div class="nav_menu">
+          <ul>
+            <li>
+              <a href="#" class="logo"><h1>Microsoft Ui</h1></a>
+            </li>
+            <li><a href="#" class="menu_links">home</a></li>
+            <li><a href="#" class="menu_links">about</a></li>
+            <li><a href="#" class="menu_links">my cart</a></li>
+            <li><a href="#" class="menu_links">user name</a></li>
+          </ul>
+        </div>
+
+        <div class="side_nav_menu">
+          <ul>
+            <li><a href="#" class="menu_links" id="nav_search_bar_target">search</a></li>
+            <li><a href="#" class="menu_links">cart</a></li>
+            <li><a href="#" class="menu_links">v s sonu</a></li>
+          </ul>
+        </div>
+        <div class="nav_search_bar animate__animated animate__slideInDown" id="nav_search_bar" style="display: none">
+          <div class="search_bar">
+            <input type="search" name="" id="" />
+            <button>Search</button>
+            <button id="nav_search_bar_cluse">cluse</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- main javascript -->
+    <script src="./js/app_ui.js"></script>
+
+    <script>
+      document.getElementById("nav_search_bar_target").addEventListener("click", () => {
+        document.getElementById("nav_search_bar").style.display = "flex";
+      });
+      document.getElementById("nav_search_bar_cluse").addEventListener("click", () => {
+        document.getElementById("nav_search_bar").style.display = "none";
+      });
+    </script>
+  </body>
+</html>
